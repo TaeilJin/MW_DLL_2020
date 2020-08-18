@@ -150,7 +150,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <LibraryPath>$(ProjectDir)..\OpenSceneGraph_354\lib_x64\vs2015;$(ProjectDir)..\lib_x64\msvc2015;$(ProjectDir)..\bt\lib;$(ProjectDir)..\lapack\lib;$(ProjectDir)..\LEVMAR\lib_x64;$(LibraryPath)</LibraryPath>
-    <IncludePath>$(ProjectDir)..\OpenSceneGraph_354\include;$(ProjectDir)..\bt\include;$(ProjectDir)..\MW2\include;$(ProjectDir)..\MW2dyn\include;$(ProjectDir)..\armadillo;C:\Users\MotionWorks\source\repos\fbxRW\bt\include;$(ProjectDir)..\LEVMAR\include;$(IncludePath)</IncludePath>
+    <IncludePath>$(ProjectDir)..\OpenSceneGraph_354\include;$(ProjectDir)..\bt\include;$(ProjectDir)..\MW2\include;$(ProjectDir)..\MW2dyn\include;$(ProjectDir)..\armadillo;C:\Users\MotionWorks\source\repos\fbxRW\bt\include;$(ProjectDir)..\LEVMAR\include;$(ProjectDir)..\IGL\include;$(ProjectDir)..\IGL\external\eigen;$(IncludePath)</IncludePath>
     <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

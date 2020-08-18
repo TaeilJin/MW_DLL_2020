@@ -157,10 +157,13 @@
     <ClCompile Include="..\alglib-3.15.0.cpp.gpl\cpp\src\ap.cpp">
       <Filter>Alglib</Filter>
     </ClCompile>
-    <ClCompile Include="Mw_Unity_Connect_DLL.cpp">
+    <ClCompile Include="..\AvatarWorld.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="..\AvatarWorld.cpp">
+    <ClCompile Include="..\mgPoseTransfer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Example_poseTransfer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -208,6 +211,9 @@
       <Filter>Alglib</Filter>
     </ClInclude>
     <ClInclude Include="..\AvatarWorld.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\mgPoseTransfer.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>

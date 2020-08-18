@@ -33,6 +33,8 @@
     <ClCompile Include="..\alglib-3.15.0.cpp.gpl\cpp\src\specialfunctions.cpp" />
     <ClCompile Include="..\alglib-3.15.0.cpp.gpl\cpp\src\statistics.cpp" />
     <ClCompile Include="..\AvatarWorld.cpp" />
+    <ClCompile Include="..\Example_poseTransfer.cpp" />
+    <ClCompile Include="..\mgPoseTransfer.cpp" />
     <ClCompile Include="..\MW2dyn\src\bCharacter.cpp" />
     <ClCompile Include="..\MW2dyn\src\bCharacterLoader.cpp" />
     <ClCompile Include="..\MW2dyn\src\bCharacterSolver.cpp" />
@@ -67,7 +69,6 @@
     <ClCompile Include="..\MW2\src\MotionLoader.cpp" />
     <ClCompile Include="..\MW2\src\Parser.cpp" />
     <ClCompile Include="..\MW2\src\spline1dFit.cpp" />
-    <ClCompile Include="Mw_Unity_Connect_DLL.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\alglib-3.15.0.cpp.gpl\cpp\src\alglibinternal.h" />
@@ -85,6 +86,7 @@
     <ClInclude Include="..\alglib-3.15.0.cpp.gpl\cpp\src\statistics.h" />
     <ClInclude Include="..\alglib-3.15.0.cpp.gpl\cpp\src\stdafx.h" />
     <ClInclude Include="..\AvatarWorld.h" />
+    <ClInclude Include="..\mgPoseTransfer.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -108,14 +110,14 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
     <UseIntelMKL>No</UseIntelMKL>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -156,8 +158,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(ProjectDir)..\OpenSceneGraph_354\include;$(ProjectDir)..\bt\include;$(ProjectDir)..\MW2\include;$(ProjectDir)..\MW2dyn\include;$(ProjectDir)..\armadillo;C:\Users\MotionWorks\source\repos\fbxRW\bt\include;$(ProjectDir)..\LEVMAR\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)..\OpenSceneGraph_354\lib_x64\vs2015;$(ProjectDir)..\bt\lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\compiler\lib\intel64;$(ProjectDir)..\suitesparse\lib_x64\msvc2015;$(ProjectDir)..\qhull\lib_x64\msvc2015;$(ProjectDir)..\lapack\lib;$(ProjectDir)..\LEVMAR\lib_x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)..\OpenSceneGraph_354\include;$(ProjectDir)..\bt\include;$(ProjectDir)..\MW2\include;$(ProjectDir)..\MW2dyn\include;$(ProjectDir)..\armadillo;C:\Users\MotionWorks\source\repos\fbxRW\bt\include;$(ProjectDir)..\LEVMAR\include;$(ProjectDir)..\IGL\include;$(ProjectDir)..\IGL\external\eigen;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\OpenSceneGraph_354\lib_x64\vs2015;$(ProjectDir)..\bt\lib;C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2018.3.210\windows\compiler\lib\intel64;$(ProjectDir)..\suitesparse\lib_x64\msvc2015;$(ProjectDir)..\qhull\lib_x64\msvc2015;$(ProjectDir)..\lapack\lib;$(ProjectDir)..\LEVMAR\lib_x64;$(ProjectDir)..\IGL\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
